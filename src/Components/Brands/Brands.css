@@ -1,0 +1,228 @@
+/* =============== BASE STYLES =============== */
+.brands {
+    text-align: center;
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 20px;
+    margin-top: 85px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    min-height: 85vh;
+}
+
+.splFont{
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffa641;
+    /* color: #4a4744; */
+}
+
+.brands h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+/* =============== SLIDER STYLES =============== */
+.brand-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.brand-slide {
+    display: flex;
+    animation: slide 15s linear infinite;
+    gap: 40px;
+    min-width: max-content;
+}
+
+.brand-slide img {
+    width: 8vw;
+    height: 9vh;
+    min-width: 100px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.brand-slide img:hover {
+    transform: scale(1.1);
+}
+
+/* SMOOTHER ANIMATION */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* =============== ACHIEVEMENTS =============== */
+.achiev {
+    margin-top: 60px;
+}
+
+.achiev h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    color: #e73a3a;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 15px 30px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.achiev p {
+    font-size: 1.2vw;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* =============== NUMBERS =============== */
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.clients, .growth {
+    background: linear-gradient(to right, #ff6b6b, #e73a3a);
+    color: white;
+    padding: 25px 30px;
+    width: 18vw;
+    min-width: 180px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.clients:hover, .growth:hover {
+    transform: scale(1.05);
+}
+
+.clients h1, .growth h1 {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+.clients p, .growth p {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+/* =============== RESPONSIVE DESIGN =============== */
+@media screen and (max-width: 1024px) {
+    .brands {
+        padding: 50px 10px;
+    }
+
+    .brands h1 {
+        font-size: 4vw;
+    }
+
+    .brand-slide img {
+        width: 10vw;
+    }
+
+    .achiev h3 {
+        font-size: 3vw;
+    }
+
+    .achiev p {
+        font-size: 1.8vw;
+    }
+
+    .clients h1, .growth h1 {
+        font-size: 4vw;
+    }
+
+    .clients p, .growth p {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brands {
+        margin-top: 50px;
+        padding: 40px 10px;
+    }
+
+    .brands h1 {
+        font-size: 5vw;
+    }
+
+    .brand-slide img {
+        width: 12vw;
+    }
+
+    .achiev h3 {
+        font-size: 4vw;
+    }
+
+    .achiev p {
+        font-size: 3vw;
+    }
+
+    .numbers {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .clients, .growth {
+        width: 60%;
+        padding: 20px;
+    }
+
+    .clients h1, .growth h1 {
+        font-size: 5vw;
+    }
+
+    .clients p, .growth p {
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .brands {
+        margin-top: 30px;
+        padding: 30px 5px;
+    }
+
+    .brands h1 {
+        font-size: 6vw;
+    }
+
+    .brand-slide img {
+        width: 15vw;
+    }
+
+    .achiev h3 {
+        font-size: 5vw;
+        padding: 10px 20px;
+    }
+
+    .achiev p {
+        font-size: 3.5vw;
+    }
+
+    .clients, .growth {
+        width: 80%;
+    }
+
+    .clients h1, .growth h1 {
+        font-size: 6vw;
+    }
+
+    .clients p, .growth p {
+        font-size: 4.5vw;
+    }
+}
