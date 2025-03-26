@@ -6,8 +6,7 @@ const About = () => {
     title: "FOUNDER & DIRECTOR",
     name: "Arun Chauhan",
     description:
-      "The visionary founder of Neowhiff, holds an MBA with a concentration in marketing from Delhi Business School. With over 11 years of experience in sales and business development, Arun has consistently driven growth and innovation in the communications industry.",
-    additionalInfo: "Click on the boxes to know more about us...",
+      "TArun Chauhan is the Founder and Director of Neowhiff, bringing over 12 years of expertise in sales and business development. His innovative leadership has driven the company to offer creative and results-oriented solutions that help businesses connect with their audiences. Arun’s strategic insights and passion for excellence continue to shape Neowhiff as a trusted leader in the industry.",
   });
 
   const contentData = {
