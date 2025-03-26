@@ -41,7 +41,7 @@ const Footer = () => {
             Home
           </ScrollLink>
           <a
-            href="https://testyesha.netlify.app/#/products"
+            href="https://yeshaenterprises.com/#/products"
             style={{ textDecoration: "None", margin: "10px", color: "black" }}
           >
             Loan
