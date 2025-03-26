@@ -95,7 +95,7 @@ const Navbar = () => {
         {/* Loan Page Link */}
         <li>
           <a
-            href="https://testyesha.netlify.app/#/products"
+            href="https://yeshaenterprises.com/#/products"
             className="loan-nav"
           >
             Loan
