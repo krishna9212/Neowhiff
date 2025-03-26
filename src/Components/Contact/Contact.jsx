@@ -7,30 +7,33 @@ import location_icon from "../../assets/location-icon2.png";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
-
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Sending...."); // Optional: show loading message to user while sending
+    
     const formData = new FormData(event.target);
-
-    formData.append("access_key", "4476fd0f-9112-4929-811c-bbeb3516f4f0");
-
+    
+    // Append a custom message to be included in the email body
+    formData.append("access_key", "d4536850-9f2c-49c1-8d5b-00205c9ba29e");
+    formData.append("message", "This form submission is from Neowhiff.");
+  
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       body: formData,
     });
-
+  
     const data = await response.json();
-
+  
     if (data.success) {
+      // Don't show "From Neowhiff" on the frontend, keep the result clean.
       setResult("Form Submitted Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);
-      setResult(data.message);
+      setResult(data.message); // Display the error message returned by the API
     }
   };
-
+    
   return (
     <div className="contact">
       <div className="contact-col">
